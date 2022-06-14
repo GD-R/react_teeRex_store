@@ -53,12 +53,11 @@ const productsSlice = createSlice({
          else {
             state.value.data = noPriceFilter
          }
-         if(state.value.data.length > 0) {
-            state.value.filterMatch = true
-         }
-         else {
+         if(state.value.data.length === 0) {
+           
             state.value.filterMatch = false
          }
+        
         }
 
     },
