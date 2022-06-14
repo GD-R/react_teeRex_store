@@ -81,7 +81,7 @@ const Home = () => {
      {searchValue.length > 1 && products.length < 1?
          <p className="text-indigo-500 text-center">No Items, search for different product</p> : null}
 
-     {!searchValue && filterMatch === false && products.length < 1?  <p className="text-indigo-500 text-center">No Items, update Filter</p> : null}
+     {!searchValue && filterMatch === false && products.length < 1?  <p className="text-indigo-500 text-center">No Items, update Filter or Click Home</p> : null}
     
 
       <div className="displayCards grid grid-cols-2 justify-items-center md:grid-cols-3 lg:grid-cols-5">
